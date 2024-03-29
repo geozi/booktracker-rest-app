@@ -23,7 +23,7 @@ public class RepositoryMapper {
     public static Repository mapToRepository(RepositoryDeleteDTO dto) {
         return new Repository(dto.getId(), dto.getName(), dto.getUrl());
     }
-    public static RepositoryReadOnlyDTO mapToRepository(Repository repo) {
+    public static RepositoryReadOnlyDTO mapToReadOnlyDTO(Repository repo) {
         return new RepositoryReadOnlyDTO(repo.getId(), repo.getName(), repo.getUrl());
     }
 }

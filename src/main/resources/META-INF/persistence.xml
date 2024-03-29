@@ -19,8 +19,8 @@
             <property name="hibernate.connection.provider_class" value="org.hibernate.hikaricp.internal.HikariCPConnectionProvider" />
             <property name="hibernate.hikari.dataSourceClassName" value="com.mysql.cj.jdbc.MysqlDataSource" />
             <property name="hibernate.hikari.dataSource.url" value="jdbc:mysql://localhost:3306/bookDB?serverTimezone=UTC" />
-            <property name="hibernate.hikari.dataSource.user" value="randomUser" />
-            <property name="hibernate.hikari.dataSource.password" value="randomPassword" />
+            <property name="hibernate.hikari.dataSource.user" value="randomuser" />
+            <property name="hibernate.hikari.dataSource.password" value="randompass" />
             <property name="hibernate.hikari.maximumPoolSize" value="10" />
             <property name="hibernate.hbm2ddl.auto" value="update" />
         </properties>

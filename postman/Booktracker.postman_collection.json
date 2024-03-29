@@ -10,7 +10,7 @@
 			"name": "Positive Scenarios",
 			"item": [
 				{
-					"name": "Insert an author",
+					"name": "Insert an Author {1}",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -38,13 +38,13 @@
 					"response": []
 				},
 				{
-					"name": "Update an author",
+					"name": "Update an Author",
 					"request": {
 						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\" : 2,\n    \"firstname\" : \"Valerie\",\n    \"lastname\" : \"Vazquez\"\n}",
+							"raw": "{\n    \"id\" : 2,\n    \"firstname\" : \"Alaina\",\n    \"lastname\" : \"Patterson\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -66,13 +66,13 @@
 					"response": []
 				},
 				{
-					"name": "Delete an author",
+					"name": "Delete an Author",
 					"request": {
 						"method": "DELETE",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\" : 3\n}",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -80,14 +80,276 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}/api/authors/3",
+							"raw": "{{base_url}}/api/authors/2",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
 								"api",
 								"authors",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert an Author {2}",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstname\" : \"Eliana\",\n    \"lastname\" : \"Jordan\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/authors/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"authors",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert a Book {1}",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\" : \"Pride and Prejudice\",\n    \"genre\" : \"FICTION\",\n    \"isbn\" :  \"978-0141439518\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/books/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"books",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert a Book {2}",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\" : \"The Great Gatsby\",\n    \"genre\" : \"FICTION\",\n    \"isbn\" : \"978-0743273565\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/books/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"books",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a Book",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\" : 2,\n    \"title\" : \"Crime and Punishment\",\n    \"genre\": \"FICTION\",\n    \"isbn\" : \"978-0486415871\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/books/2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"books",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert a Book {3}",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"The Alchemist\",\n    \"genre\" : \"FICTION\",\n    \"isbn\" : \"978-0061122415\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/books/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"books",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a Book",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/books/3",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"books",
 								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get an Author",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/authors/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"authors",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a Book",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/books/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"books",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert a Publisher",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"HarperCollins\",\n    \"phoneNumber\" : \"800-242-7737\",\n    \"email\": \"consumercare@harpercollins.com\",\n    \"streetAddress\": \"195 Broadway\",\n    \"city\" : \"New York\",\n    \"url\": \"https://www.harpercollins.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/publishers",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"publishers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a Publisher",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/publishers/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"publishers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a Publisher",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/publishers/2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"publishers",
+								"2"
 							]
 						}
 					},
