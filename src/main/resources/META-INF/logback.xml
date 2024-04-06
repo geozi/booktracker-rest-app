@@ -1,6 +1,6 @@
 <configuration>
     <appender name="FILE" class="ch.qos.logback.core.FileAppender">
-        <file>/home/yaz/temp/book-tracker.log</file>
+        <file>/file/path</file>
         <!--        <append>true</append>-->
         <!--        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">-->
         <!--            <fileNamePattern>C:\Users\a8ana\IdeaProjects\schoolapp-hibernate-jaxrs-cf22\cf-%d{dd-MM-yyyy}.log</fileNamePattern>-->
